@@ -9,12 +9,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro:900" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link href="dist/hamburgers.css" rel="stylesheet">
   <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
     <!-- header start -->
   <header class="main-header">
+
     <div class="main-header-left">
         <div class="main-header-left-container">       
             <a href="#"><img src="images/logo.png" alt="Digital Elite logo" class="fade-in-left wow" data-wow-delay=".5s"></a>
@@ -30,10 +32,39 @@
     <div class="main-header-right">
             <nav class="main-nav">
                 <ul>
-                    <li>Home</li>
-                    <li>Services</li>
-                    <li>Clients</li>
-                    <li>Contact</li>
+                    <a href="#">
+                        <li>Home</li>
+                    </a>
+                    <a href="#">
+                        <li>Services</li>
+                    </a>
+                    <a href="#">
+                        <li>Clients</li>
+                    </a>
+                    <a href="#">
+                        <li>Contact</li>
+                    </a>       
+                </ul>
+            </nav>
+            <button onclick="onClickHamburgerActive()" class="hamburger hamburger--collapse" type="button">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
+            <nav class="mobile-nav ">               
+                <ul>
+                    <a href="#">
+                        <li>Home</li>
+                    </a>
+                    <a href="#">
+                        <li>Services</li>
+                    </a>
+                    <a href="#">
+                        <li>Clients</li>
+                    </a>
+                    <a href="#">
+                        <li>Contact</li>
+                    </a>       
                 </ul>
             </nav>
     </div>
@@ -111,7 +142,51 @@
       </section>
   </main>
   <footer class="main-footer">
-  
+    <header>
+      <h2 class="bounce wow" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: bounce;">Just Scratching The Surface</h2>
+    </header>
+    <hr>
+    <section class="main-footer-items-container">
+      <div class="main-footer-item">
+        <i class="fas fa-power-off fa-2x"></i>
+        <h3>Easy Process</h3>
+        <p>We understand that your priority is with your customers. Here at Digital Elite we do the heavy lifting to ensure a smooth process from start to finish.</p>
+        <a href="#">Learn More<i class="fas fa-angle-right"></i></a>
+      </div>
+      <!-- End of Main Footer Items -->
+      <div class="main-footer-item">
+        <i class="fas fa-desktop fa-2x"></i>
+        <h3>Level up your digital presence</h3>
+        <p>83% of our clients experience increased sales due to a better online presence and higher search ratings.</p>
+        <a href="#">Learn More<i class="fas fa-angle-right"></i></a>
+      </div>
+      <!-- End of Main Footer Items -->
+      <div class="main-footer-item">
+        <i class="fas fa-database fa-2x"></i>
+        <h3>Secure your Data</h3>
+        <p>Afraid of how secure your business will be online? Digital Elite has the best engineers securing our databases to ensure that data is never lost.</p>
+        <a href="#">Learn More<i class="fas fa-angle-right"></i></a>
+      </div>
+      <!-- End of Main Footer Items -->
+    </section>
+    <!-- End of Main Footer Items Container -->
+    <section class="footer-end">
+      <div class="footer-end-top">
+        <i class="fas fa-phone fa-flip-horizontal"></i>
+        <p class="footer-phone-number">777-777-7777</p>
+        <a href="#"><i class="fab fa-facebook-square"></i></a>
+        <a href="#"><i class="fab fa-twitter-square"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+      <!-- End of Footer End Top -->
+      <hr>
+      <div class="footer-end-bottom">
+        <p>2020© Digital Elite, All rights reserved.</p>
+      </div>
+      <!-- End of Footer End Bottom -->
+    </section>
+    <!-- End of Footer End -->
   </footer>
   <script src="JS/scripts.js"></script>
   <script src="JS/smooth-scroll.js"></script>
